@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/MaciejGad/EasterEggAwakens.git", :tag => 'v0.1' }
   s.source_files  =  "Classes/*.{h,m}"
-  s.resources = "Supports/*"
+  s.resources = ["Supports/*.m4a", "Supports/*.png"]
   s.requires_arc = true
   s.dependency "AIMNotificationObserver", "~> 0.3"
 end
