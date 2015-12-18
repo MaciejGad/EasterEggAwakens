@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.source_files  =  "Classes/*.{h,m}"
   s.resources = "Supports/*"
   s.requires_arc = true
+  s.dependency "AIMNotificationObserver", "~> 0.3"
 end
