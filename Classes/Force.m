@@ -43,7 +43,7 @@
     NSInteger startTime = arc4random_uniform(5) + 5;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(startTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         TieFighter *tieFighter = [TieFighter new];
-        [[UIApplication sharedApplication].keyWindow.rootViewController.view addSubview:tieFighter];
+        [[UIApplication sharedApplication].keyWindow addSubview:tieFighter];
         [tieFighter flight];
         NSInteger startTime = arc4random_uniform(10) + 5;
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(startTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
